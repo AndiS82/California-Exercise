@@ -1,0 +1,400 @@
+/*=================
+Global
+===================*/
+/*
+sass --watch assets/scss/style.scss assets/css/style.css
+*/
+@font-face {
+  font-family: "Work-Sans";
+  src: url(../fonts/WorkSans-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Lora";
+  src: url(../fonts/Lora-VariableFont_wght.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+button:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+img {
+  height: 20vh;
+  width: 100%;
+}
+
+/*=================
+HEADER
+===================*/
+header {
+  background-color: #000;
+}
+header section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+header section h1 {
+  padding-bottom: 0.5%;
+  text-align: center;
+  font-size: 15rem;
+  font-family: "Lora";
+  color: #fff;
+}
+header section p {
+  padding: 1% 0 0 0;
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Work-Sans";
+  color: #fff;
+}
+header nav {
+  padding: 2% 5%;
+  display: flex;
+  justify-content: space-between;
+}
+header nav div img {
+  height: 5vh;
+}
+header nav button {
+  width: 5%;
+  background-color: #000;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Lora";
+  color: #fff;
+}
+
+header section p:nth-of-type(1) {
+  padding: 2% 0 1% 0;
+}
+
+section p:nth-of-type(2) {
+  padding-bottom: 4%;
+}
+
+span {
+  -webkit-text-stroke: 0.01px #fff;
+  text-align: center;
+  font-size: 15rem;
+  font-family: "Lora";
+  color: #000;
+}
+
+/*=================
+MAIN ARTICLE
+===================*/
+main {
+  background-color: #000;
+}
+main #article1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #fff;
+  background-image: url(../img/map.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 40%;
+}
+main #article1 h2 {
+  padding: 0 25% 0 5%;
+  word-break: keep-all;
+  text-align: left;
+  font-size: 12rem;
+  font-family: "Lora";
+  color: #fff;
+}
+main #article1 div {
+  padding: 15% 0 5% 5%;
+}
+#article1 div h3 {
+  text-align: left;
+  font-size: 2rem;
+  font-family: "Lora";
+  color: #fff;
+}
+
+#article1 div p {
+  padding-bottom: 5%;
+  text-align: left;
+  font-size: 8rem;
+  font-family: "Lora";
+  color: #fff;
+}
+
+#article1 div p:nth-of-type(3) {
+  padding: 0;
+}
+
+/*=================
+Main Section
+===================*/
+main section {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+main section div {
+  position: relative;
+  width: 20%;
+}
+main section div:nth-of-type(3) {
+  margin-top: 70vh;
+  width: 35%;
+  align-self: center;
+}
+main section div:nth-of-type(8) {
+  margin: 120vh 0 60vh 0;
+  width: 35%;
+  align-self: center;
+}
+main section div img {
+  height: fit-content;
+  width: 100%;
+}
+main section div h2 {
+  text-align: start;
+  font-size: 13rem;
+  font-family: "Lora";
+  color: #000;
+}
+main section div p {
+  line-height: 5rem;
+  text-align: start;
+  font-size: 2rem;
+  font-family: "Lora";
+  color: #000;
+}
+/*=================
+Main Picture Classes
+===================*/
+#transform1 {
+  position: absolute;
+  transform: translate(70vw, -5vh);
+}
+
+#transform2 {
+  width: 70%;
+  position: absolute;
+  transform: translate(10vw, 30vh);
+}
+
+#transform3 {
+  width: 70%;
+  position: absolute;
+  transform: translate(80vw, -15vh);
+}
+
+#transform4 {
+  position: absolute;
+  transform: translate(20vw, 20vh);
+}
+
+#transform5 {
+  position: absolute;
+  transform: translate(65vw, 65vh);
+}
+
+#transform6 {
+  width: 70%;
+  position: absolute;
+  transform: translate(0vw, 125vh);
+}
+
+#transform7 {
+  position: absolute;
+  transform: translate(60vw, -30vh);
+}
+
+/*=================
+Main Article 2 Goldenbear
+===================*/
+#article2 {
+  padding: 20% 10%;
+  display: grid;
+  grid-template-areas: "goldenbear1 goldenbear2" "goldenbear_img goldenbear_img";
+  grid-gap: 2rem;
+  background-color: #000;
+}
+#article2 .goldenbear1 {
+  width: 60%;
+  grid-area: "goldenbear1";
+  display: flex;
+  flex-direction: column;
+}
+#article2 .goldenbear1 p {
+  padding-bottom: 5%;
+  text-align: start;
+  font-size: 2rem;
+  font-family: "Lora";
+  color: #fff;
+}
+#article2 .goldenbear1 h2 {
+  line-height: 9rem;
+  text-align: start;
+  font-size: 10rem;
+  font-family: "Lora";
+  color: #fff;
+}
+#article2 .goldenbear2 {
+  margin-bottom: 50vh;
+  width: 90%;
+  grid-area: "goldenbear2";
+  display: flex;
+  flex-direction: column;
+}
+#article2 .goldenbear2 p {
+  text-align: start;
+  font-size: 4rem;
+  font-family: "Lora";
+  color: #fff;
+}
+#article2 .goldenbear2 .signature {
+  padding: 5% 0;
+  text-align: start;
+  font-size: 2rem;
+  font-family: "Lora";
+  color: #fff;
+}
+#article2 #goldenbear_img {
+  grid-area: "goldenbear_img";
+  position: relative;
+}
+#article2 #goldenbear_img #bear1 {
+  width: 100%;
+}
+#article2 #goldenbear_img img {
+  height: fit-content;
+  width: 60%;
+}
+
+#bear1 {
+  position: absolute;
+  transform: translate(10vw, -40vh);
+}
+
+#bear2 {
+  position: absolute;
+  transform: translate(45vw, -28vh);
+}
+
+/*=================
+Main Article 3 Goldenbear
+===================*/
+#article3 {
+  height: fit-content;
+  position: relative;
+  padding: 30% 10%;
+  display: grid;
+  grid-template-areas: "poppybear1 poppybear2" "poppybear_img poppybear_img";
+  grid-template-rows: 1/2;
+  grid-gap: 2rem;
+  background-color: #fff;
+}
+#article3 #circle {
+  overflow: hidden;
+  width: 35%;
+  position: absolute;
+  right: 0;
+}
+#article3 #circle #poppycircle {
+  height: 100vh;
+  width: auto;
+  transform: translate(10vw, -40vh);
+  /*position: absolute;
+  transform: translate(70vw, -30vh);*/
+}
+#article3 #poppybear1 {
+  width: 60%;
+  grid-area: "poppybear1";
+  display: flex;
+  flex-direction: column;
+}
+#article3 #poppybear1 p {
+  padding-bottom: 5%;
+  text-align: start;
+  font-size: 2rem;
+  font-family: "Lora";
+  color: #000;
+}
+#article3 #poppybear1 h2 {
+  line-height: 9rem;
+  text-align: start;
+  font-size: 10rem;
+  font-family: "Lora";
+  color: #000;
+}
+#article3 #poppybear2 {
+  margin-bottom: 20vh;
+  width: 90%;
+  grid-area: "poppybear2";
+  display: flex;
+  flex-direction: column;
+}
+#article3 #poppybear2 p {
+  text-align: start;
+  font-size: 4rem;
+  font-family: "Lora";
+  color: #000;
+}
+#article3 #poppybear2 .signature {
+  text-align: start;
+  font-size: 2rem;
+  font-family: "Lora";
+  color: #000;
+}
+#article3 #poppybear_img {
+  grid-area: poppybear_img;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#article3 #poppybear_img #bear3 {
+  z-index: 1;
+  height: fit-content;
+  width: 30%;
+  transform: translate(5vw, 22.5vh);
+}
+#article3 #poppybear_img #bear4 {
+  height: fit-content;
+  width: 60%;
+  transform: translate(-10vw, 0vh);
+}
+
+/*=================
+Footer
+===================*/
+footer {
+  color: #fff;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+}
+footer .footerbox button {
+  width: 5%;
+  background-color: #000;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Lora";
+  color: #fff;
+}
+footer .footerbox button:hover {
+  color: #000;
+  background-color: #fff;
+}
+footer .footerbox #socialmedia {
+  display: flex;
+  width: 5%;
+}
+footer .footerbox #ngos {
+  display: flex;
+}
+
+/*# sourceMappingURL=style.css.map */

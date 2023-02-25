@@ -1,0 +1,486 @@
+/*=================
+Global
+===================*/
+
+/*
+sass --watch assets/scss/style.scss assets/css/style.css
+*/
+
+@font-face {
+    font-family: 'Work-Sans';
+    src: url(../fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: url(../fonts/Lora-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+button:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+img {
+    height: 20vh;
+    width: 100%;
+}
+
+@mixin text-style($ta, $fz, $ff, $fc) {
+    text-align: $ta;
+    font-size: $fz;
+    font-family: $ff;
+    color: $fc;
+}
+
+/*=================
+HEADER
+===================*/
+
+header {
+    background-color: #000;
+
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        img {}
+
+        p {}
+
+        h1 {
+            padding-bottom: 0.5%;
+            @include text-style(center, 15rem, 'Lora', #fff);
+        }
+
+        p {
+            padding: 1% 0 0 0;
+            @include text-style(center, 3rem, 'Work-Sans', #fff);
+        }
+    }
+
+    nav {
+        padding: 2% 5%;
+        display: flex;
+        justify-content: space-between;
+
+        div {
+            img {
+                height: 5vh;
+            }
+        }
+
+        button {
+            width: 5%;
+            background-color: #000;
+            @include text-style(center, 2rem, 'Lora', #fff);
+        }
+    }
+}
+
+header section p:nth-of-type(1) {
+    padding: 2% 0 1% 0;
+}
+
+section p:nth-of-type(2) {
+    padding-bottom: 4%
+}
+
+span {
+    -webkit-text-stroke: 0.01px #fff;
+    @include text-style(center, 15rem, 'Lora', #000);
+}
+
+/*=================
+MAIN ARTICLE
+===================*/
+main {
+    background-color: #000;
+
+    #article1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        color: #fff;
+        background-image: url(../img/map.svg);
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        background-size: 40%;
+
+        h2 {
+            padding: 0 25% 0 5%;
+            word-break: keep-all;
+            @include text-style(left, 12rem, 'Lora', #fff);
+        }
+
+        div {
+            padding: 15% 0 5% 5%;
+
+            h3 {}
+
+            p {}
+
+            h3 {}
+
+            p {}
+
+            h3 {}
+
+            p {}
+        }
+    }
+}
+
+#article1 div h3 {
+    @include text-style(left, 2rem, 'Lora', #fff);
+}
+
+#article1 div p {
+    padding-bottom: 5%;
+    @include text-style(left, 8rem, 'Lora', #fff);
+}
+
+#article1 div p:nth-of-type(3) {
+    padding: 0;
+}
+
+/*=================
+Main Section
+===================*/
+
+main section {
+
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+
+    div {
+        position: relative;
+        width: 20%;
+
+        &:nth-of-type(3) {
+            margin-top: 70vh;
+            width: 35%;
+            align-self: center;
+        }
+
+        &:nth-of-type(8) {
+            margin: 120vh 0 60vh 0;
+            width: 35%;
+            align-self: center
+        }
+
+        img {
+            height: fit-content;
+            width: 100%
+        }
+    }
+
+    div {
+        img {}
+    }
+
+    div {
+
+        h2 {
+            @include text-style(start, 13rem, 'Lora', #000);
+        }
+
+        p {
+            line-height: 5rem;
+            @include text-style(start, 2rem, 'Lora', #000);
+        }
+    }
+
+    div {
+        img {}
+    }
+
+    div {
+        img {}
+    }
+
+    div {
+        img {}
+    }
+
+    div {
+        img {}
+    }
+
+    div {
+        p {}
+    }
+
+    div {
+        img {}
+    }
+}
+
+/*=================
+Main Picture Classes
+===================*/
+#transform1 {
+    position: absolute;
+    transform: translate(70vw, -5vh);
+}
+
+#transform2 {
+    width: 70%;
+    position: absolute;
+    transform: translate(10vw, 30vh);
+}
+
+#transform3 {
+    width: 70%;
+    position: absolute;
+    transform: translate(80vw, -15vh);
+}
+
+#transform4 {
+    position: absolute;
+    transform: translate(20vw, 20vh);
+}
+
+#transform5 {
+    position: absolute;
+    transform: translate(65vw, 65vh);
+}
+
+#transform6 {
+    width: 70%;
+    position: absolute;
+    transform: translate(0vw, 125vh);
+}
+
+#transform7 {
+    position: absolute;
+    transform: translate(60vw, -30vh);
+}
+
+/*=================
+Main Article 2 Goldenbear
+===================*/
+#article2 {
+
+    padding: 20% 10%;
+    display: grid;
+    grid-template-areas: "goldenbear1 goldenbear2"
+        "goldenbear_img goldenbear_img";
+    grid-gap: 2rem;
+    background-color: #000;
+
+    .goldenbear1 {
+        width: 60%;
+        grid-area: "goldenbear1";
+        display: flex;
+        flex-direction: column;
+
+
+        p {
+            padding-bottom: 5%;
+            @include text-style(start, 2rem, 'Lora', #fff);
+        }
+
+        h2 {
+            line-height: 9rem;
+            @include text-style(start, 10rem, 'Lora', #fff);
+        }
+    }
+
+    .goldenbear2 {
+        margin-bottom: 50vh;
+        width: 90%;
+        grid-area: "goldenbear2";
+        display: flex;
+        flex-direction: column;
+
+
+        p {
+            @include text-style(start, 4rem, 'Lora', #fff);
+        }
+
+        .signature {
+            padding: 5% 0;
+            @include text-style(start, 2rem, 'Lora', #fff);
+        }
+    }
+
+    #goldenbear_img {
+
+        grid-area: "goldenbear_img";
+        position: relative;
+
+        #bear1 {
+
+            width: 100%;
+        }
+
+        img {
+            height: fit-content;
+            width: 60%;
+        }
+    }
+}
+
+#bear1 {
+
+    position: absolute;
+    transform: translate(10vw, -40vh);
+}
+
+#bear2 {
+
+    position: absolute;
+    transform: translate(45vw, -28vh);
+}
+
+/*=================
+Main Article 3 Goldenbear
+===================*/
+#article3 {
+    height: fit-content;
+    position: relative;
+    padding: 30% 10%;
+    display: grid;
+    grid-template-areas: "poppybear1 poppybear2"
+        "poppybear_img poppybear_img";
+    grid-template-rows: 1/2;
+    grid-gap: 2rem;
+    background-color: #fff;
+
+    #circle {
+        overflow: hidden;
+        width: 35%;
+        position: absolute;
+        right: 0;
+
+        #poppycircle {
+            height: 100vh;
+            width: auto;
+            transform: translate(10vw, -40vh);
+            /*position: absolute;
+            transform: translate(70vw, -30vh);*/
+        }
+    }
+
+    #poppybear1 {
+
+        width: 60%;
+        grid-area: "poppybear1";
+        display: flex;
+        flex-direction: column;
+
+        p {
+            padding-bottom: 5%;
+            @include text-style(start, 2rem, 'Lora', #000);
+        }
+
+        h2 {
+            line-height: 9rem;
+            @include text-style(start, 10rem, 'Lora', #000);
+        }
+    }
+
+    #poppybear2 {
+
+        margin-bottom: 20vh;
+        width: 90%;
+        grid-area: "poppybear2";
+        display: flex;
+        flex-direction: column;
+
+        p {
+            @include text-style(start, 4rem, 'Lora', #000);
+        }
+
+        .signature {
+            @include text-style(start, 2rem, 'Lora', #000);
+        }
+    }
+
+    #poppybear_img {
+        grid-area: poppybear_img;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        #bear3 {
+            z-index: 1;
+            height: fit-content;
+            width: 30%;
+            transform: translate(5vw, 22.5vh);
+        }
+
+        #bear4 {
+            height: fit-content;
+            width: 60%;
+            transform: translate(-10vw, 0vh);
+        }
+    }
+}
+
+/*=================
+Footer
+===================*/
+footer {
+    color: #fff;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+
+    .footerbox {
+        a {}
+
+        p {}
+
+
+        button {
+            width: 5%;
+            background-color: #000;
+            @include text-style(center, 2rem, 'Lora', #fff);
+
+            &:hover {
+                color: #000;
+                background-color: #fff;
+            }
+        }
+
+        #socialmedia {
+            display: flex;
+            width: 5%;
+
+            img {}
+
+            img {}
+
+            img {}
+        }
+
+        p {}
+
+        P {}
+    }
+
+
+    .footerbox {
+        div {}
+
+        #ngos {
+            display: flex;
+
+
+            img {}
+
+            img {}
+        }
+    }
+}
